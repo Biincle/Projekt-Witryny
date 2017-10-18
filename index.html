@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <!-- CONTENT -->
 
     <!-- NAV -->
@@ -29,23 +30,22 @@
             <a class="nav-link" href="index.html">Transfery <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Coś tam</a>
+            <a class="nav-link" href="#">Newsy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Transfery LIVE</a>
           </li>
         </ul>
-        <!-- <button class="btn btn-outline-success" type="button" name="button">Zaloguj</button> -->
-        <div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opcje</button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Ustawienia</a>
-    <a class="dropdown-item" href="add-transfer.html">Dodaj transfer</a>
-    <a class="dropdown-item" href="#">Dodaj news'a</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Wyloguj</a>
-  </div>
-</div>
+        <a class="btn btn-outline-success" href="Logowanie2.html">Zaloguj</a>
+          <!-- <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opcje</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Ustawienia</a>
+              <a class="dropdown-item" href="add-transfer.html">Dodaj</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Wyloguj</a>
+            </div>
+          </div> -->
 
       </div>
     </nav>
@@ -53,81 +53,339 @@
 
 
 <!-- CONTENT -->
-<div class="container">
-  <div class="row">
+<div class="container flex-grow">
 
-  </div>
-  <div class="row">
-  <div class="col-md-9 col-md-offset-3" style="margin-left:auto;margin-right:auto;margin-top:10px;">
+        <div class="col-md-12" style="margin-top:10px;">
+      <div class="karty">
+<div class="row">
 
-<!--
-    <div class="card" style="margin-bottom:20px;">
-      <div class="card-body">
-        <div class="card-left">
-            <img class="img-responsive" src="img/testowy_pilkarz.jpg" alt="testowy_pilkarz" width="64" height="64">
-            <p class="card-text">Imię i Nazwisko</p>
-            <p class="card-text">FC PoNaLewce</p>
-        </div>
-
-        <div class="card-middle">
-          <p class="card-text">$0.00000</p>
-        </div>
-
-        <div class="card-right">
-          <img class="img-responsive" src="img/real.png" alt="testowy klub" width="64" height="64">
-        </div>
-
+  <div class="card mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
       </div>
-      <div class="card-footer">
-     <small class="text-muted">Informacja pochodzi ze strony: <a href="#">esp.net</a></small>
-   </div>
-</div> -->
 
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
 
-
-    <div class="card" style="margin-bottom:20px;">
-      <h4 class="card-header">Transfer <a class="btn btn-info btn-sm" href="transfer-info.html" role="button" style="float:right;">Więcej</a></h4>
-      <div class="card-body">
-        <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive rounded" src="img/testowy_pilkarz.jpg" alt="testowy_pilkarz" width="64" height="64" style="margin-bottom:5px;">
-            <span>Imię i Nazwisko</span>
-            <p class="card-text"><img src="img/nalewka.png" alt="" width="24" height="24"> FC PoNalewce</p>
-        </div>
-
-        <div class="col-md-4">
-          <div class="price">
-          <p class="card-text price-text">$0.00000</p>
-        </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="nowy-img">
-          <img class="img-responsive" src="img/real.png" alt="testowy klub" width="64" height="64">
-          <p class="card-text">Real Madrid CF</p>
-        </div>
-        </div>
-
-      </div>
     </div>
-      <div class="card-footer">
-     <small class="text-muted">Informacja pochodzi ze strony: <a href="#">esp.net</a></small>
-   </div>
-</div>
-
-<p>//Próbny</p>
 
 
-
-
-
-
-
-
-
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
   </div>
+
+
+
+          <div class="card mr-c" style="width: 20rem;">
+            <div class="card-body">
+              <div class="card-title">
+                <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+                <span class="card-text">Imię i Nazwisko</span>
+                <span class="badge badge-secondary" style="float:right;">Transfer</span>
+              </div>
+
+                  <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+                    <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+                  </div>
+                  <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+                      <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+                  </div>
+                  <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+                    <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+                  </div>
+
+            </div>
+
+
+                    <div class="card-footer text-muted" style="text-align:center;">
+                        <span class="price">50.000.000 $</span>
+                  </div>
+          </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <div class="card-title">
+            <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+            <span class="card-text">Imię i Nazwisko</span>
+            <span class="badge badge-secondary" style="float:right;">Wypożyczenie</span>
+          </div>
+
+              <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+                <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+              </div>
+              <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+                  <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+              </div>
+              <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+                <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+              </div>
+
+        </div>
+
+
+                <div class="card-footer text-muted" style="text-align:center;">
+                    <span class="price">50.000.000 $</span>
+              </div>
+      </div>
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c mr-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+  <div class="card mt-c" style="width: 20rem;">
+    <div class="card-body">
+      <div class="card-title">
+        <img src="img/testowy_pilkarz.jpg" class="img-responsive rounded" alt="test" width="44" height="44">
+        <span class="card-text">Imię i Nazwisko</span>
+        <span class="badge badge-secondary" style="float:right;">Transfer</span>
+      </div>
+
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:left;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+          <div class="col-md-2" style="float:left;width:60px;height:50px;text-align:center;position: absolute;left: 37%;">
+              <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
+          </div>
+          <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
+            <img src="img/real.png" class="img-responsive" alt="test" width="44" height="44">
+          </div>
+
+    </div>
+
+
+            <div class="card-footer text-muted" style="text-align:center;">
+                <span class="price">50.000.000 $</span>
+          </div>
+  </div>
+
+
+
+
+
+
+
+
+          <!-- TODO:
+              Karty nie są responsywne - na telefonie nie działają tak jak powinny. - Do poprawy
+         -->
+
+
+       </div> <!-- <== div karty -->
+        </div>
+    </div>
 </div>
-</div>
+
 
 <!-- /CONTENT -->
 
@@ -135,9 +393,111 @@
 
 
    <!-- footer -->
-    <nav class="navbar fixed-bottom navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Copyright &copy Borkowo Team</a>
-   </nav>
+   <footer class="footer">
+     <div class="container" style="padding-top:36px;">
+       <div class="row">
+         <div class="col-md-3">
+           <h5 class="text-gray">O Nas</h5>
+           <ul class="list-unstyled mb-0 row">
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-network" target="_blank" href="#">Transfery.co Network</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-company" target="_blank" href="#">Firma</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-careers" target="_blank" href="#">Kariera</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-contact" target="_blank" href="#">Kontakt</a>
+                    </li>
+                </ul>
+         </div>
+         <div class="col-md-3">
+           <h5 class="text-gray">Legal</h5>
+           <ul class="list-unstyled mb-0 row">
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-imprint" target="_blank" href="#">Imprint</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-privacy" target="_blank" href="#">Polityka Prywatności</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-tos" target="_blank" href="#">Regulamin</a>
+                    </li>
+                    <li class="col-12 mb-lg">
+                        <a class="text-black" id="footer-link-licenses" href="#">Licencje</a>
+                    </li>
+                </ul>
+         </div>
+         <div class="col-md-6">
+           <div style="float:right;">
+           <h5 class="text-gray">Aplikacja</h5>
+           <ul class="list-unstyled d-flex flex-row flex-wrap mb-0">
+                        <li class="my-2 mr-md">
+                            <a class="footer__links text-gray" href="#" id="footer-link-apple" target="_blank">
+                                <img alt="App Store" title="App Store" src="img/apple.svg">
+                            </a>
+                        </li>
+                        <li class="my-2 mr-md">
+                            <a class="footer__links text-gray" href="#" id="footer-link-google" target="_blank">
+                                <img alt="Google Play" title="Google Play" src="img/google-play.svg">
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a class="footer__links text-gray" href="#" id="footer-link-windows" target="_blank">
+                                <img alt="Windows Store" title="Windows Store" src="img/windows-store.svg">
+                            </a>
+                        </li>
+                    </ul>
+                <div style="margin-top:25px">
+              <h5 class="text-gray">Społeczność</h5>
+              <ul class="list-unstyled d-flex flex-row flex-wrap justify-content-between mb-0">
+                        <li class="m-1">
+                            <a class="ikony text-gray" id="footer-link-facebook" target="_blank" href="#">
+                                <img alt="FB" title="Facebook" src="entypo_ikony/facebook.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-twitter" target="_blank" href="#">
+                                <img alt="TW" title="Twitter" src="entypo_ikony/twitter.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-youtube" target="_blank" href="#">
+                                <img alt="YT" title="Youtube" src="assets/app-footer/social-youtube.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-snapchat" target="_blank" href="#">
+                                <img alt="SN" title="Snapchat" src="assets/app-footer/social-snapchat.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-instagram" target="_blank" href="#">
+                                <img alt="IN" title="Instagram" src="assets/app-footer/social-instagram.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-soundcloud" target="_blank" href="#">
+                                <img alt="SC" title="Soundcloud" src="assets/app-footer/social-soundcloud.svg">
+                            </a>
+                        </li>
+                        <li class="m-1">
+                            <a class="footer__links text-gray" id="footer-link-audioboom" target="_blank" href="#">
+                                <img alt="AB" title="Audioboom" src="assets/app-footer/social-audioboom.svg">
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+         </div>
+       </div>
+       </div>
+       <div class="col-md-12 text-center text-gray text-sm pt-md pb-md">
+                <p class="m-0">© Transfery.co – Wszelkie prawa zastrzeżone!</p>
+            </div>
+     </div>
+   </footer>
 <!-- footer -->
 
 
@@ -147,7 +507,10 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
+   <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+
+   </script>
   </body>
 </html>
