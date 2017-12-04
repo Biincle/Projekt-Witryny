@@ -93,10 +93,24 @@ class transfer {
           return $idRow['id_klub'];
         }else if($type == 'nowy_klub'){
           return $idRow['id_nowy_klub'];
+        }else if($type == 'kwota'){
+          return $idRow['kwota'];
         }
         } catch (Exception $e) {
           echo $e->getMessage();
         }
+
+    }
+
+
+    public function usunTransfer($id){
+      try {
+
+          $q = $this->db->prepare("DELETE FROM transfer WHERE id=:id");
+          $q->execute(array(':id' => $id));
+      } catch (Exception $e) {
+        echo $e->getMessage();
+      }
 
     }
 

@@ -1,6 +1,13 @@
 <?php
+
 include_once 'class/DatabaseConnect.php';
 include_once 'class/class.transfer.php';
+
+if(isset($_COOKIE['aktywacja'])){
+   
+}else{
+   $user->redirect('soon.php');
+ }
 if(!$user->is_loggedin()){
   $info[] = "Zachęcamy do tworzenia kont :)";
 }else {
@@ -10,6 +17,7 @@ $stmt = $DB_con->prepare("SELECT * FROM uzytkownicy WHERE id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
 $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 $nick = $userRow['nick'];
+$uprawnienia = $userRow['uprawnienia'];
     }
 
 
@@ -45,7 +53,7 @@ $nick = $userRow['nick'];
           <a class="nav-link" href="index.php">Transfery <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Newsy</a>
+          <a class="nav-link disabled" href="#">Newsy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Transfery LIVE</a>

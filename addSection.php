@@ -76,6 +76,11 @@ if(isset($_POST['pilkarz_wyslano'])){
     $data_urodzenia = $_POST['data_urodzenia'];
     $pozycja_boisko = $_POST['pozycja_boisko'];
 
+    if($imie == '' || $nazwisko == '' || $aktualny_klub == '' || $pozycja_boisko == ''){
+      $error[] = "Nie można dodać pustego piłkarza ...";
+    }
+
+
     $sql = "SELECT * FROM klub WHERE nazwa = :aktualny_klub";
     $q = $DB_con->prepare($sql);
     $q->bindValue(':aktualny_klub', $aktualny_klub);
@@ -244,7 +249,7 @@ if($stm){
             <div class="result"></div>
           </div>
           <div class="form-group">
-             <label>Pozycja na boisku: *</label>
+             <label>Typ Transferu: *</label>
              <select class="form-control" name="typ">
                <option>Transfer</option>
                <option>Wypożyczenie</option>

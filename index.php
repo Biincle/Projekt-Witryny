@@ -1,8 +1,26 @@
 <?php
 include("header.php");
+
 ?>
-      <div class="karty">
-<div class="row">
+      <!-- <div class="karty"> -->
+      <style media="screen">
+      @media (min-width:992px) {
+      .center {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      }
+      }
+      </style>
+      <div class="alert alert-warning" role="alert" style="text-align:center;">
+          <strong>UWAGA!</strong>Strona jest w zamkniętej wersji pre-pre-pre ALPHA 1.2.0v
+    </div>
+<div class="row center">
 
   <?php
     $zapytanie = $DB_con->query("SELECT * FROM transfer");
@@ -14,7 +32,7 @@ include("header.php");
 
 
     ?>
-    <div class="card mr-c transfer" style="width: 20rem;" id="<?php echo $wiersz['id']?>">
+    <div class="card mr-c transfer" style="width: 20rem;margin-bottom: 5px;" id="<?php echo $wiersz['id']?>">
       <div class="card-body">
         <div class="card-title">
           <img src="<?php echo $transfer->getName($wiersz['id_pilkarz'], 'profilowe')?>" class="img-responsive rounded" alt="png" width="44" height="44">
@@ -29,7 +47,7 @@ include("header.php");
                 <span class="oi oi-arrow-right arrow-style" aria-hidden="true" title="strzałek"></span>
             </div>
             <div class="col-md-2 cien" style="width:50px;height:50px;float:right;">
-              <img src="<?php echo $transfer->clubManager($wiersz['id_nowy_klub'], 'logo')?>" class="img-responsive" alt="<?php echo $transfer->clubManager($wiersz['id_klub'], 'nazwa')?>" width="44" height="44">
+              <img src="<?php echo $transfer->clubManager($wiersz['id_nowy_klub'], 'logo')?>" class="img-responsive" alt="<?php echo $transfer->clubManager($wiersz['id_nowy_klub'], 'nazwa')?>" width="44" height="44">
             </div>
 
       </div>
@@ -47,11 +65,12 @@ include("header.php");
   ?>
 
 
+
           <!-- TODO:
               Karty nie są responsywne - na telefonie nie działają tak jak powinny. - Do poprawy
          -->
 
 
        </div> <!-- <== div karty -->
-        </div>
+      <!--  </div> -->
 <?php include("footer.php");?>
